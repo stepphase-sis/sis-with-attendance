@@ -1,0 +1,38 @@
+body{
+	
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: aqua;	
+}
+.menu li{
+	list-style: none;
+	width: 160px;
+	height:50px;
+	background-color:aqua;
+	margin-left: 5px;
+	text-align: center;
+	line-height: 50px;
+	float: left;
+}
+
+.menu li a{
+	color: black;
+	display: block;
+	text-decoration: none;
+}
+.logo{
+	width: 100px;
+}
+#banner{
+	width: 100%;
+}
+#banner img{
+	margin-top:30px;
+	width: 100%;
+}
