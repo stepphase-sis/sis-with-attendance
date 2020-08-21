@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #05445e;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #05445f;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #189ab4;
+        color: white;
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html" class="logo">SISLogo</a>
+      <div class="topnav-right">
+        <a href="index.html">Home</a>
+        <a href="Contact.html" class="active">Contact Us</a>
+        <a href="About.html">About Us</a>
+        <a href="./auth/Login.html">Login</a>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">India</option>
+          <option value="canada">Australia</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Message"
+          style="height: 200px;"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="footer" style="margin-top: 120px;">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>
