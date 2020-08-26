@@ -4,13 +4,34 @@
   <head>
     <title>Login Page</title>
     <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .container {
+        border-radius: 5px;
+        background-color: #189ab4;
+        color: white;
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 50px;
+      }
+    </style>
   </head>
 
   <body>
+    <div class="topnav">
+      <a href="#default" class="logo">SISLogo</a>
+      <div class="topnav-right">
+        <a href="../index.html">Home</a>
+        <a href="../Contact.html">Contact Us</a>
+        <a href="../About.html">About Us</a>
+        <a href="./Registration.html" class="active">Registration</a>
+      </div>
+    </div>
+    <div class="container">
     <div class="card">
       <table width="345" align="center" border="1">
-        <caption>
-          LogIn Page
+        <caption style="margin: 20px;">
+          Login Page
         </caption>
         <tr>
           <th height="34">Username</th>
@@ -28,11 +49,15 @@
           <th height="39" colspan="2">
             <input type="submit" value="LogIn" />
             <input type="reset" value="Reset Data" /></br>
-            <a href="Registration.html" target="_blank">Registration Page</a>
+            <a href="Registration.html">Registration Page</a>
             <span class="psw">&nbsp;&nbsp;Forgot <a href="#">password?</a></span>
           </th>
         </tr>
       </table>
+    </div>
+    </div>
+    <div class="footer">
+      <h2>Footer</h2>
     </div>
   </body>
 </html>

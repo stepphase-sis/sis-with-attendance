@@ -3,150 +3,171 @@
   <head>
     <title>HTML Table</title>
     <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .container {
+        border-radius: 5px;
+        background-color: #189ab4;
+        color: white;
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 50px;
+      }
+    </style>
   </head>
   <body>
-    <div class="card">
-      <form method="GET" action="">
-        <table border="1" align="center" width="400">
-          <caption>
-            Registration form
-          </caption>
-          <tr>
-            <th>Enter first name</th>
-            <td>
-              <input
-                type="text"
-                name="fn"
-                id="fn1"
-                maxlength="10"
-                title="enter your first name"
-                placeholder="enter your first name"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <th>Enter last name</th>
-            <td><input type="text" placeholder="enter your last name" /></td>
-          </tr>
-          <tr>
-            <th>Enter password</th>
-            <td><input type="password" placeholder="enter your password" /></td>
-          </tr>
-          <tr>
-            <th>ReEnter password</th>
-            <td>
-              <input type="password" placeholder="re-enter your password" />
-            </td>
-          </tr>
-          <tr>
-            <th>Enter email</th>
-            <td><input type="email" placeholder="enter your email" /></td>
-          </tr>
-          <tr>
-            <th>Enter Contact Number</th>
-            <td>
-              <input
-                type="tel"
-                placeholder="enter your number"
-                pattern="[0-9]{5}-[0-9]{5}"
-              /><br />
-              <small>Format: 12345-67890</small><br /><br />
-            </td>
-          </tr>
-          <tr>
-            <th>Enter Address</th>
-            <td>
-              <textarea
-                rows="8"
-                cols="20"
-                wrap="hard"
-                placeholder="enter your address"
-              ></textarea>
-            </td>
-          </tr>
-          <tr>
-            <th>Select gender</th>
-            <td>
-              Male<input type="radio" name="g" value="m" checked /> Female<input
-                type="radio"
-                name="g"
-                value="f"
-              />
-            </td>
-          </tr>
-          <tr>
-            <th>Select hobbies</th>
-            <td>
-              Cricket<input type="checkbox" name="" value="h" checked />
-              Tennis<input type="checkbox" name="" value="h2" /> HandBall<input
-                type="checkbox"
-                name=""
-                value="h3"
-              />
-            </td>
-          </tr>
-          <tr>
-            <th>Range skills from 0 to 10</th>
-            <td>
-              <label for="points">C++:</label>
-              <input
-                type="range"
-                id="pointsc++"
-                name="pointsc++"
-                min="0"
-                max="10"
-                value="0"
-              /><br />
-              <label for="points">C#&nbsp;&nbsp;&nbsp;:</label>
-              <input
-                type="range"
-                id="pointsc#"
-                name="pointsc#"
-                min="0"
-                max="10"
-                value="0"
-              /><br />
-              <label for="points">Java:</label>
-              <input
-                type="range"
-                id="pointsjava"
-                name="pointsjava"
-                min="0"
-                max="10"
-                value="0"
-              />
-            </td>
-          </tr>
-          <tr>
-            <th>Select DOB</th>
-            <td><input type="date" /></td>
-          </tr>
-          <tr>
-            <th>Select Country</th>
-            <td>
-              <select name="country">
-                <option value="" selected="selected" disabled="disabled"
-                  >Select country</option
-                >
-                <option value="1">India</option>
-                <option value="2">USA</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <th>Upload photo</th>
-            <td><input type="file" /></td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center">
-              <input type="submit" value="Register" />
-              <input type="reset" value="Reset Data" />
-              <a href="Registration.html" target="_blank">LogIn Page</a>
-            </td>
-          </tr>
-        </table>
-      </form>
+    <div class="topnav">
+      <a href="#default" class="logo">SISLogo</a>
+      <div class="topnav-right">
+        <a href="../index.html">Home</a>
+        <a href="../Contact.html">Contact Us</a>
+        <a href="../About.html">About Us</a>
+        <a href="./Login.html" class="active">Login</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <form method="GET" action="">
+          <table border="1" align="center" width="400">
+            <caption>
+              Registration form
+            </caption>
+            <tr>
+              <th>Enter first name</th>
+              <td>
+                <input
+                  type="text"
+                  name="fn"
+                  id="fn1"
+                  maxlength="10"
+                  title="enter your first name"
+                  placeholder="enter your first name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Enter last name</th>
+              <td><input type="text" placeholder="enter your last name" /></td>
+            </tr>
+            <tr>
+              <th>Enter password</th>
+              <td>
+                <input type="password" placeholder="enter your password" />
+              </td>
+            </tr>
+            <tr>
+              <th>ReEnter password</th>
+              <td>
+                <input type="password" placeholder="re-enter your password" />
+              </td>
+            </tr>
+            <tr>
+              <th>Enter email</th>
+              <td><input type="email" placeholder="enter your email" /></td>
+            </tr>
+            <tr>
+              <th>Enter Contact Number</th>
+              <td>
+                <input
+                  type="tel"
+                  placeholder="enter your number"
+                  pattern="[0-9]{5}-[0-9]{5}"
+                /><br />
+                <small>Format: 12345-67890</small><br /><br />
+              </td>
+            </tr>
+            <tr>
+              <th>Enter Address</th>
+              <td>
+                <textarea
+                  rows="8"
+                  cols="20"
+                  wrap="hard"
+                  placeholder="enter your address"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <th>Select gender</th>
+              <td>
+                Male<input type="radio" name="g" value="m" checked />
+                Female<input type="radio" name="g" value="f" />
+              </td>
+            </tr>
+            <tr>
+              <th>Select hobbies</th>
+              <td>
+                Cricket<input type="checkbox" name="" value="h" checked />
+                Tennis<input type="checkbox" name="" value="h2" />
+                HandBall<input type="checkbox" name="" value="h3" />
+              </td>
+            </tr>
+            <tr>
+              <th>Range skills from 0 to 10</th>
+              <td>
+                <label for="points">C++:</label>
+                <input
+                  type="range"
+                  id="pointsc++"
+                  name="pointsc++"
+                  min="0"
+                  max="10"
+                  value="0"
+                /><br />
+                <label for="points">C#&nbsp;&nbsp;&nbsp;:</label>
+                <input
+                  type="range"
+                  id="pointsc#"
+                  name="pointsc#"
+                  min="0"
+                  max="10"
+                  value="0"
+                /><br />
+                <label for="points">Java:</label>
+                <input
+                  type="range"
+                  id="pointsjava"
+                  name="pointsjava"
+                  min="0"
+                  max="10"
+                  value="0"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Select DOB</th>
+              <td><input type="date" /></td>
+            </tr>
+            <tr>
+              <th>Select Country</th>
+              <td>
+                <select name="country">
+                  <option value="" selected="selected" disabled="disabled"
+                    >Select country</option
+                  >
+                  <option value="1">India</option>
+                  <option value="2">USA</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>Upload photo</th>
+              <td><input type="file" /></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <input type="submit" value="Register" />
+                <input type="reset" value="Reset Data" />
+                <a href="Login.html">LogIn Page</a>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Footer</h2>
     </div>
   </body>
 </html>
