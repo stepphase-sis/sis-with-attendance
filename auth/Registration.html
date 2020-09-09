@@ -3,6 +3,16 @@
   <head>
     <title>HTML Table</title>
     <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      .container {
+        background-color: #189ab4;
+        color: white;
+        padding: 20px;
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+      }
+    </style>
   </head>
   <body>
      <div class="topnav">
@@ -16,9 +26,9 @@
     </div>
     <div class="card">
       <form method="GET" action="">
-        <table border="1" align="center" width="400">
-          <caption>
-            Registration form
+        <table align="center" width="600">
+          <caption style="padding: 20px; background-color: #05445e">
+            Registration
           </caption>
           <tr>
             <th>Enter first name</th>
@@ -40,10 +50,12 @@
           </tr>
           <tr>
             <th>Enter password</th>
-            <td><input type="password" placeholder="enter your password" /></td>
+            <td>
+              <input type="password" placeholder="enter your password" />
+            </td>
           </tr>
           <tr>
-            <th>ReEnter password</th>
+            <th>Re-enter password</th>
             <td>
               <input type="password" placeholder="re-enter your password" />
             </td>
@@ -67,7 +79,7 @@
             <th>Enter Address</th>
             <td>
               <textarea
-                rows="8"
+                rows="2"
                 cols="20"
                 wrap="hard"
                 placeholder="enter your address"
@@ -107,15 +119,6 @@
                 max="10"
                 value="0"
               /><br />
-              <label for="points">C#&nbsp;&nbsp;&nbsp;:</label>
-              <input
-                type="range"
-                id="pointsc#"
-                name="pointsc#"
-                min="0"
-                max="10"
-                value="0"
-              /><br />
               <label for="points">Java:</label>
               <input
                 type="range"
@@ -135,9 +138,9 @@
             <th>Select Country</th>
             <td>
               <select name="country">
-                <option value="" selected="selected" disabled="disabled"
-                  >Select country</option
-                >
+                <option value="" selected="selected" disabled="disabled">
+                  Select country
+                </option>
                 <option value="1">India</option>
                 <option value="2">USA</option>
               </select>
@@ -148,10 +151,13 @@
             <td><input type="file" /></td>
           </tr>
           <tr>
-            <td colspan="2" align="center">
+            <td colspan="2" align="center" style="margin-bottom: 40px">
               <input type="submit" value="Register" />
               <input type="reset" value="Reset Data" />
-              <a href="Registration.html" target="_blank">LogIn Page</a>
+              <h3>
+                Already have an account
+                <a href="./Login.html" style="color: #05445e">Login</a>
+              </h3>
             </td>
           </tr>
         </table>
