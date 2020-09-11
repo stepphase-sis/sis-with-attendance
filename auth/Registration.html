@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
-      .container {
+      .container-card {
         background-color: #189ab4;
         color: white;
         padding: 20px;
@@ -39,9 +39,9 @@
         </li>
       </ul>
     </nav>
-    <div class="card">
+    <div class="container-card">
       <form method="GET" action="">
-        <table align="center" width="600">
+        <table align-item="center" width="600">
           <caption style="padding: 20px; background-color: #05445e">
             Registration
           </caption>
@@ -82,12 +82,7 @@
           <tr>
             <th>Enter Contact Number</th>
             <td>
-              <input
-                type="tel"
-                placeholder="enter your number"
-                pattern="[0-9]{5}-[0-9]{5}"
-              /><br />
-              <small>Format: 12345-67890</small><br /><br />
+              <input type="tel" placeholder="enter your number" />
             </td>
           </tr>
           <tr>
