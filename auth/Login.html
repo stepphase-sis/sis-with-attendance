@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <title>Login Page</title>
     <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       .container {
         background-color: #189ab4;
@@ -25,15 +28,26 @@
   </head>
 
   <body>
-    <div class="topnav">
-      <a href="../index.html" class="logo">SISLogo</a>
-      <div class="topnav-right">
-        <a href="../index.html">Home</a>
-        <a href="../Contact.html">Contact Us</a>
-        <a href="../About.html">About Us</a>
-        <a href="Registration.html" class="active">Registtration</a>
-      </div>
-    </div>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa fa-bars"></i>
+      </span>
+      <a href="../index.html" class="logo">logo</a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="../index.html" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="../About.html" class="nav-links">About Us</a>
+        </li>
+        <li>
+          <a href="../Contact.html" class="nav-links">Contact Us</a>
+        </li>
+        <li>
+          <a href="Registration.html" class="nav-links">Registration</a>
+        </li>
+      </ul>
+    </nav>
     <div class="card">
       <table width="345" align="center" border="1">
         <caption>
@@ -92,5 +106,6 @@
     <div class="footer">
       <h2>Footer</h2>
     </div>
+    <script src="./script/script.js"></script>
   </body>
 </html>

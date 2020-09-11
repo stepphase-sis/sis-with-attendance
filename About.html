@@ -3,6 +3,10 @@
   <head>
     <title>Contact Us</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       * {
         box-sizing: border-box;
@@ -50,15 +54,26 @@
     </style>
   </head>
   <body>
-    <div class="topnav">
-      <a href="index.html" class="logo">SISLogo</a>
-      <div class="topnav-right">
-        <a href="index.html">Home</a>
-        <a href="Contact.html">Contact Us</a>
-        <a href="About.html" class="active">About Us</a>
-        <a href="./auth/Login.html">Login</a>
-      </div>
-    </div>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa fa-bars"></i>
+      </span>
+      <a href="index.html" class="logo">logo</a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="index.html" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="About.html" class="nav-links active">About Us</a>
+        </li>
+        <li>
+          <a href="Contact.html" class="nav-links">Contact Us</a>
+        </li>
+        <li>
+          <a href="./auth/Login.html" class="nav-links">Login</a>
+        </li>
+      </ul>
+    </nav>
     <div class="about-section" style="text-align: center">
       <h1>About Us</h1>
       <p>Some text about who we are and what we do.</p>
@@ -71,7 +86,7 @@
     <h2 style="text-align: center">Our Team</h2>
     <div class="row">
       <div class="column">
-        <div class="card" style="text-align: center;">
+        <div class="card" style="text-align: center">
           <h3>Saif ali</h3>
           <p>saif67838@gmail.com</p>
           <p>8200275270</p>
@@ -87,7 +102,7 @@
       </div>
 
       <div class="column">
-        <div class="card" style="text-align: center;">
+        <div class="card" style="text-align: center">
           <h3>Shraddha</h3>
           <p>Shraddhadwn@gmail.com</p>
           <p>8140540222</p>
@@ -95,7 +110,7 @@
       </div>
 
       <div class="column">
-        <div class="card" style="text-align: center;">
+        <div class="card" style="text-align: center">
           <h3>Abha Singh</h3>
           <p>pabha012@gmail.com</p>
           <p>8849007300</p>
@@ -105,5 +120,6 @@
     <div class="footer">
       <h2>Footer</h2>
     </div>
+    <script src="./script/script.js"></script>
   </body>
 </html>

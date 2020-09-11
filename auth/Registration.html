@@ -3,6 +3,10 @@
   <head>
     <title>HTML Table</title>
     <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       .container {
         background-color: #189ab4;
@@ -15,15 +19,26 @@
     </style>
   </head>
   <body>
-     <div class="topnav">
-      <a href="../index.html" class="logo">SISLogo</a>
-      <div class="topnav-right">
-        <a href="../index.html">Home</a>
-        <a href="../Contact.html">Contact Us</a>
-        <a href="../About.html">About Us</a>
-        <a href="Login.html" class="active">Login</a>
-      </div>
-    </div>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa fa-bars"></i>
+      </span>
+      <a href="../index.html" class="logo">logo</a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="../index.html" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="../About.html" class="nav-links">About Us</a>
+        </li>
+        <li>
+          <a href="../Contact.html" class="nav-links">Contact Us</a>
+        </li>
+        <li>
+          <a href="Login.html" class="nav-links">Login</a>
+        </li>
+      </ul>
+    </nav>
     <div class="card">
       <form method="GET" action="">
         <table align="center" width="600">
@@ -166,5 +181,6 @@
     <div class="footer">
       <h2>Footer</h2>
     </div>
+    <script src="./script/script.js"></script>
   </body>
 </html>

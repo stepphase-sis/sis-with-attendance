@@ -26,27 +26,6 @@ td {
 th {
   color: white;
 }
-.topnav {
-  overflow: hidden;
-  background-color: #05445e;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.active {
-  background-color: #189ab4;
-  color: white;
-}
-.topnav-right {
-  float: right;
-}
 .cardHeader {
   background-color: #189ab4;
   color: white;
@@ -107,7 +86,89 @@ input[type="reset"] {
   /* margin-top: 20px; */
   color: white;
 }
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+.navbar {
+  font-size: 18px;
+  background-color: #05445e;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  float: right;
+  margin: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+  color: #189ab4;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 48px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: white;
+  }
+}
+
+/*main contain cards */
 @media screen and (max-width: 800px) {
   .leftcolumn,
   .rightcolumn {
@@ -115,11 +176,4 @@ input[type="reset"] {
     padding: 0;
   }
 }
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
+/*main contain cards */
