@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact Us</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <link
@@ -8,13 +9,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      * {
-        box-sizing: border-box;
-      }
-
       input[type="text"],
       select,
       textarea {
@@ -47,7 +41,7 @@
         padding: 20px;
         max-width: 600px;
         margin: auto;
-        margin-top: 20px;
+        margin-top: 65px;
       }
     </style>
   </head>
@@ -68,46 +62,48 @@
           <a href="Contact.html" class="nav-links active">Contact Us</a>
         </li>
         <li>
-          <a href="./auth/Login.html" class="nav-links">Blog</a>
+          <a href="./auth/Login.html" class="nav-links">Login</a>
         </li>
       </ul>
     </nav>
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form action="#" method="POST">
-        <label for="fname">First Name</label>
-        <input
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="Your name.."
-        />
+    <div class="row">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
 
-        <label for="lname">Last Name</label>
-        <input
-          type="text"
-          id="lname"
-          name="lastname"
-          placeholder="Your last name.."
-        />
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">India</option>
-          <option value="canada">Australia</option>
-          <option value="usa">USA</option>
-        </select>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">India</option>
+            <option value="canada">Australia</option>
+            <option value="usa">USA</option>
+          </select>
 
-        <label for="subject">Subject</label>
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="Message"
-          style="height: 200px"
-        ></textarea>
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Message"
+            style="height: 200px"
+          ></textarea>
 
-        <input type="submit" value="Submit" />
-      </form>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </div>
     <div class="footer" style="margin-top: 120px">
       <h2>2020@ SIS</h2>
