@@ -7,6 +7,7 @@ body {
   overflow-y: scroll;
 }
 body::-webkit-scrollbar {
+  /* google chrome */
   display: none;
 }
 body {
@@ -179,7 +180,7 @@ input[type="reset"] {
 }
 
 /*main contain cards */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .leftcolumn,
   .rightcolumn {
     width: 100%;
@@ -187,8 +188,8 @@ input[type="reset"] {
   }
 }
 /*main contain cards */
-/* icon css start */
 
+/* icon css start */
 .btn.btn-social-icon {
   width: 50px;
   height: 50px;
@@ -196,11 +197,11 @@ input[type="reset"] {
 }
 
 .template-demo > .btn {
-  margin-right: 0.5rem !important;
+  margin-right: 0.5rem !important; /* 1rem = 16px */
 }
 
 .template-demo {
-  margin-top: 0.5rem !important;
+  margin-top: 0.5rem !important; /* 1rem = 16px */
 }
 
 .btn.btn-rounded {
