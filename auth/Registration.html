@@ -17,7 +17,6 @@
         margin: auto;
         margin-top: 65px;
       }
-
     </style>
   </head>
   <body>
@@ -42,13 +41,19 @@
       </ul>
     </nav>
     <div class="container-card">
-      <form method="GET" action="">
+      <form
+        method="POST"
+        name="register"
+        id="registeration"
+        action=""
+        onsubmit="return validate();"
+      >
         <table align-item="center" width="600">
           <caption style="padding: 20px; background-color: #05445e">
             Registration
           </caption>
           <tr>
-            <th>Enter first name</th>
+            <th>First Name</th>
             <td>
               <input
                 type="text"
@@ -57,43 +62,55 @@
                 maxlength="10"
                 title="enter your first name"
                 placeholder="enter your first name"
-                required
               />
             </td>
           </tr>
           <tr>
-            <th>Enter last name</th>
-            <td><input type="text" placeholder="enter your last name" /></td>
+            <th>Last Name</th>
+            <td>
+              <input type="text" name="ln" placeholder="enter your last name" />
+            </td>
           </tr>
           <tr>
             <th>Enter password</th>
             <td>
-              <input type="password" placeholder="enter your password" />
+              <input
+                type="password"
+                name="pwd"
+                placeholder="enter your password"
+              />
             </td>
           </tr>
           <tr>
             <th>Re-enter password</th>
             <td>
-              <input type="password" placeholder="re-enter your password" />
+              <input
+                type="password"
+                name="repwd"
+                placeholder="re-enter your password"
+              />
             </td>
           </tr>
           <tr>
-            <th>Enter email</th>
-            <td><input type="email" placeholder="enter your email" /></td>
-          </tr>
-          <tr>
-            <th>Enter Contact Number</th>
+            <th>Email</th>
             <td>
-              <input type="tel" placeholder="enter your number" />
+              <input type="email" name="email" placeholder="enter your email" />
             </td>
           </tr>
           <tr>
-            <th>Enter Address</th>
+            <th>Contact Number</th>
+            <td>
+              <input type="tel" name="number" placeholder="enter your number" />
+            </td>
+          </tr>
+          <tr>
+            <th>Address</th>
             <td>
               <textarea
                 rows="2"
                 cols="20"
                 wrap="hard"
+                name="address"
                 placeholder="enter your address"
               ></textarea>
             </td>
@@ -109,41 +126,7 @@
             </td>
           </tr>
           <tr>
-            <th>Select hobbies</th>
-            <td>
-              Cricket<input type="checkbox" name="" value="h" checked />
-              Tennis<input type="checkbox" name="" value="h2" /> HandBall<input
-                type="checkbox"
-                name=""
-                value="h3"
-              />
-            </td>
-          </tr>
-          <tr>
-            <th>Range skills from 0 to 10</th>
-            <td>
-              <label for="points">C++:</label>
-              <input
-                type="range"
-                id="pointsc++"
-                name="pointsc++"
-                min="0"
-                max="10"
-                value="0"
-              /><br />
-              <label for="points">Java:</label>
-              <input
-                type="range"
-                id="pointsjava"
-                name="pointsjava"
-                min="0"
-                max="10"
-                value="0"
-              />
-            </td>
-          </tr>
-          <tr>
-            <th>Select DOB</th>
+            <th>Date Of Birth</th>
             <td><input type="date" /></td>
           </tr>
           <tr>
@@ -178,6 +161,6 @@
     <div class="footer">
       <h2>2020@ SIS</h2>
     </div>
-    <script src="./script/script.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>

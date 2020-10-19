@@ -55,17 +55,25 @@
           Login
         </caption>
       </table>
-      <p>
-        <label>Email</label>
-        <input class="input" type="text" />
-      </p>
-      <p>
-        <label>Passowrd</label>
-        <input class="input" type="text" />
-      </p>
-      <div style="text-align: center">
-        <input type="submit" value="LogIn" />
-      </div>
+      <form
+        method="POST"
+        name="register"
+        id="registeration"
+        action=""
+        onsubmit="return validate();"
+      >
+        <p>
+          <label>Email</label>
+          <input class="input" name="email" type="email" required />
+        </p>
+        <p>
+          <label>Passowrd</label>
+          <input class="input" name="pwd" type="pwd" required />
+        </p>
+        <div style="text-align: center">
+          <input type="submit" value="LogIn" />
+        </div>
+      </form>
       <div style="text-align: center; margin: 20px">
         <span>Forgot <a href="#" style="color: #05445e">password?</a></span
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For
@@ -75,6 +83,6 @@
     <div class="footer">
       <h2>2020@ SIS</h2>
     </div>
-    <script src="./script/script.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>
