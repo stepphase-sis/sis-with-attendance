@@ -20,8 +20,7 @@ function validate() {
     country = document.register.country.value;
 
   if (fname == "") {
-    popup.classList.toggle("show");
-    //alert("Name cannot be blank");
+    alert("Name cannot be blank");
     document.register.fn.focus();
     return false;
   }
