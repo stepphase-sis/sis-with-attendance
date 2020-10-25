@@ -22,6 +22,13 @@ img {
   height: 500px;
   width: 100%;
 }
+.logo {
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-top: 40px;
+  margin-left: -10px;
+}
 table {
   border-collapse: collapse;
   width: 100%;
@@ -165,15 +172,9 @@ input[type="reset"] {
     margin-left: 40px;
   }
 
-  .logo {
-    margin-top: 0;
-  }
-
   .navbar-toggle {
     display: none;
   }
-
-  .logo:hover,
   .nav-links:hover {
     color: white;
   }
@@ -329,4 +330,3 @@ input[type="reset"] {
   color: #ffffff;
 }
 /* icon css end */
-
