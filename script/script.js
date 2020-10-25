@@ -5,9 +5,6 @@ let navBarToggle = document.getElementById("js-navbar-toggle");
 navBarToggle.addEventListener("click", function () {
   mainNav.classList.toggle("active");
 });
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  
 
 //Validation
 function validate() {
@@ -104,5 +101,4 @@ function validate() {
     return false;
   }
   return true;
-}
 }
