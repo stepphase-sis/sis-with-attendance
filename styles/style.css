@@ -27,8 +27,9 @@ img {
   height: 100px;
   width: 100px;
   margin-top: 40px;
-  margin-left: -10px;
+  margin-left: 10px;
 }
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -128,13 +129,6 @@ input[type="reset"] {
   margin: 15px auto;
 }
 
-.logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
 .navbar-toggle {
   float: right;
   margin: 10px;
@@ -186,6 +180,13 @@ input[type="reset"] {
   .rightcolumn {
     width: 100%;
     padding: 0;
+  }
+  .logo {
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
   }
 }
 /*main contain cards */
