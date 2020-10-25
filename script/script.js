@@ -5,9 +5,6 @@ let navBarToggle = document.getElementById("js-navbar-toggle");
 navBarToggle.addEventListener("click", function () {
   mainNav.classList.toggle("active");
 });
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  
 
 //Validation
 function validate() {
@@ -23,8 +20,7 @@ function validate() {
     country = document.register.country.value;
 
   if (fname == "") {
-    popup.classList.toggle("show");
-    //alert("Name cannot be blank");
+    alert("Name cannot be blank");
     document.register.fn.focus();
     return false;
   }
@@ -104,5 +100,4 @@ function validate() {
     return false;
   }
   return true;
-}
 }
