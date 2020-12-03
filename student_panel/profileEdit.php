@@ -86,7 +86,6 @@ if (isset($_SESSION["slogged"])) {
                 <input class="input" name="sem" type="sem"
                     value="<?php if (isset($_COOKIE['sem'])) {echo $_COOKIE['sem'];} ?>" />
             </p>
-
             <div style="text-align: center">
                 <input type="submit" value="Save" name="save" />
             </div>
